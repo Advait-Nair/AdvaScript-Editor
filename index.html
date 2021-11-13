@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AdvaScript Editor v0.1b</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/28c18a059a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="adva-code-editor">
+            <div class="topbar">
+                <div class="flex-spaced">
+                    <h4 class="ps">AdvaScript Editor v0.1b</h4>
+                    <h4 class="title"><input type="text" class="name psb" value="New Untitled Script"></h4>
+                    <h4 class="runprog"><i class="fas fa-play"></i></h4>
+                </div>
+            </div>
+            <div class="editor">
+                <div class="line">
+                    1
+                </div>
+                <div class="content">
+                    <textarea spellcheck="false" type="text" class="gettextinput"></textarea>
+                    <div class="code-content">
+                        <span class="codeline">
+                            Type your code here...
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="adva-result-code">
+            <div class="topbar2">
+                <div class="flex-spaced">
+                    <h4 class="ps">Result</h4>
+                    <h4 class="cross-res"><div class="flex">Close</div></h4>
+                </div>
+            </div>
+            <form class="commands">
+                <input type="text" class="command" placeholder="Enter a command...">
+            </form>
+            <div class="res font-ubuntu ps">
+            </div>
+        </div>
+    </body>
+    <script src="DASLCompile.js"></script>
+    <script src="ADVAPrettify.js"></script>
+    <script src="app.js"></script>
+</html>
